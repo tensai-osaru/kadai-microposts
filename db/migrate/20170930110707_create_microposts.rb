@@ -4,7 +4,8 @@ class CreateMicroposts < ActiveRecord::Migration[5.0]
       t.string :content
       t.references :user, foreign_key: true
 
-      t.timestamps
+      t.timestamps 
+
     end
   end
 end
