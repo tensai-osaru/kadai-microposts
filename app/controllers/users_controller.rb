@@ -43,6 +43,9 @@ class UsersController < ApplicationController
     # favorites_user GET    /users/:id/favorites(.:format)  users#favorites
     @user = User.find(params[:id])
     @favorites = @user.favorite_microposts.page(params[:page])
+    
+    #@micropost = Micropost.find(params[:micropost_id])
+    #@favorites = @micropost.favorite_microposts.page(params[:micropost_id])
   end
   
 
